@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">FlexTrain</string>
+    <string name="title_home">Workouts</string>
+    <string name="title_dashboard">Tracker</string>
+    <string name="title_nutrition">Nutrition</string>
+    <string name="title_notifications">Chat</string>
+    <string name="title_user">User</string>
+
+    <string-array name="categories_array">
+        <item>Legs</item>
+        <item>Chest</item>
+        <item>Shoulders</item>
+        <item>Arms</item>
+        <item>Back</item>
+        <item>Abs</item>
+        <item>Cardio</item>
+    </string-array>
+<!--    <string-array name="groups_array">-->
+<!--        <item>Group 1</item>-->
+<!--        <item>Group 2</item>-->
+<!--        &lt;!&ndash; Add more items as needed &ndash;&gt;-->
+<!--    </string-array>-->
+
+        <string-array name="expertise_levels">
+            <item>Beginner</item>
+            <item>Intermediate</item>
+            <item>Expert</item>
+        </string-array>
+
+    <string-array name="expertise_levels_array">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Expert</item>
+    </string-array>
+
+
+
+
+
+</resources>

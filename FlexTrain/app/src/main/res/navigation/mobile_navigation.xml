@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.flextrain.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <!-- Add action to navigate to UserFragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_userFragment"
+            app:destination="@id/navigation_user" />
+        <!-- Add action to navigate to NutritionFragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_nutrition"
+            app:destination="@id/navigation_nutrition" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.flextrain.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <!-- Add action to navigate to NutritionFragment -->
+        <action
+            android:id="@+id/action_dashboardFragment_to_nutrition"
+            app:destination="@id/navigation_nutrition" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.flextrain.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" >
+        <!-- Add action to navigate to NutritionFragment -->
+        <action
+            android:id="@+id/action_notificationsFragment_to_nutrition"
+            app:destination="@id/navigation_nutrition" />
+    </fragment>
+
+    <!-- Add the user fragment -->
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.example.flextrain.ui.userpage.UserFragment"
+        android:label="@string/title_user"
+        tools:layout="@layout/fragment_user" >
+        <!-- Add action to navigate to NutritionFragment -->
+        <action
+            android:id="@+id/action_userFragment_to_nutrition"
+            app:destination="@id/navigation_nutrition" />
+    </fragment>
+
+    <!-- Add the NutritionFragment -->
+    <fragment
+        android:id="@+id/navigation_nutrition"
+        android:name="com.example.flextrain.ui.nutrition.NutritionFragment"
+        android:label="@string/title_nutrition"
+        tools:layout="@layout/fragment_nutrition" />
+</navigation>
